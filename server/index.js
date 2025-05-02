@@ -11,6 +11,9 @@ import UploadRoute from './Routes/UploadRoute.js';
 
 // Routes
 const app = express();
+app.get("/api/hello", (req, res) => {
+    res.json({ msg: "Hello world!" });
+  });
 
 
 // to serve images for public (public folder)
